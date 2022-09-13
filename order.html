@@ -15,7 +15,7 @@ and your choice of a hand-picked, premium melon.
 
 <h2>Melon Options</h2>
 
-<p>Choose from one of these melons:</p>
+<h4>Choose from one of these melons:</h4>
 
 <table>
     <tr>
@@ -35,41 +35,68 @@ and your choice of a hand-picked, premium melon.
 <h2>Order Form</h2>
 
 
-<div>
-
-</div>
 <form>
-<label for="username">Enter your name</label>
-<input type="text" name="name" id="username">
+    
+    <fieldset>
+        <legend>Name of person ordering a melon:</legend>
+        <div>
+            <label for="username">Name:</label>
+            <input type="text" name="name" id="username">
+        </div>
+    </fieldset>
 
-<div></div>
-Who are we sending this to?
-<label for="recipient-name">Enter recipient's name</label>
-<input type="text" name="recipient" id="recipient-name">
-<div></div>
-Choose a melon:
-<select name="melon">
-<option value="watermelon">Watermelon</option>
-<option value="canteloupe">Canteloupe</option>
-<option value="honeydew">Honeydew</option>
-</select>
-<div></div>
 
-When should we deliver?
-<input type="radio" name="delivery-time" value="morning">Morning
-<input type="radio" name="delivery-time" value="evening">Evening
-<input type="radio" name="delivery-time" value="anytime">Anytime
-<div></div>
+    <fieldset>
+        <legend>Who are we sending this to?</legend>
+        <div>
+            <label for="recipient-name">Enter recipient's name</label>
+            <input type="text" name="recipient" id="recipient-name">
+        </div>
+    </fieldset>
+    <fieldset>
+        <legend>Choose a Melon:</legend>
+        <div>
+            <select name="melon">
+            <option value="watermelon">Watermelon</option>
+            <option value="canteloupe">Canteloupe</option>
+            <option value="honeydew">Honeydew</option>
+            </select>
+        </div>
+    </fieldset>
 
-<label for="user-message">Please enter your message:</label>
-<input type="text" name="message" id="user-message">
-<div></div>
+    <fieldset>
+        <legend>When should we deliver?</legend>
+        <div>
+            <input type="radio" name="delivery-time" value="morning">
+            <label for="morning">Morning</label>
+            <input type="radio" name="delivery-time" value="evening">
+            <label for="Evening">Evening</label>
+            <input type="radio" name="delivery-time" value="anytime">
+            <label for="Anytime">Anytime</label>
+        </div>
+    </fieldset>
 
-Subscribe to our newsletter by clicking below:
-<div></div>
-<input type="checkbox" name="subscribe" value="yes" id="subscribe">
-<label for="subscribe">Subscribe</label>
-<div></div>
-<button type="submit">Submit</button>
+
+
+    <fieldset>
+        <legend>What would you like to say?</legend>
+        <div>
+            <label for="user-message">Please enter your message:</label>
+            <input type="text" name="message" id="user-message">
+        </div>
+    </fieldset>
+    <div>
+    Thank you for your order!
+    </div>
+    <div>
+    Subscribe to our newsletter by clicking below:
+    </div>
+    <div>
+        <input type="checkbox" name="subscribe" value="yes" id="subscribe">
+        <label for="subscribe">Subscribe</label>
+    </div
+    <div>
+    <button type="submit">Submit</button>
+    </div>
 </form>
 </body>
