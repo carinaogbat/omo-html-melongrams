@@ -1,102 +1,110 @@
 <!DOCTYPE html>
+<html>
 <head>
-    <title>Order a Melongram!</title> 
-    <h1>Order a Melongram!</h1>
+        <title>Order a Melongram!</title> 
 </head>
-
-
-<body>
-    <p>
-There's no better way to show a loved one you care than with a Melongram.
-
-Each Melongram comes with a custom message printed on high-quality cardstock
-and your choice of a hand-picked, premium melon.
-</p>
-
-<h2>Melon Options</h2>
-
-<h4>Choose from one of these melons:</h4>
-
-<table>
-    <tr>
-        <td>Watermelon</td>
-        <td>$1,200.00</td>
-    </tr>
-    <tr>
-        <td>Canteloupe</td>
-        <td>$400.00</td>
-    </tr>
-    <tr>
-        <td>Honeydew</td> 
-        <td>$1,750.00</td>
-    </tr>
-</table>
-
-<h2>Order Form</h2>
-
-
-<form>
+    <body>
+        <header>
+        <h1>Order a Melongram!</h1>
+        </header>
     
-    <fieldset>
-        <legend>Name of person ordering a melon:</legend>
+
+    <section id="melongram-info">
+        <p>
+        There's no better way to show a loved one you care than with a Melongram.
+
+        Each Melongram comes with a custom message printed on high-quality cardstock
+        and your choice of a hand-picked, premium melon.
+        </p>
+    </section>
+
+    <section id="melon-options"
+        <h2>Melon Options</h2>
+
+        <h4>Choose from one of these melons:</h4>
+
+        <table>
+            <tr>
+                <td>Watermelon</td>
+                <td>$1,200.00</td>
+            </tr>
+            <tr>
+                <td>Canteloupe</td>
+                <td>$400.00</td>
+            </tr>
+            <tr>
+                <td>Honeydew</td> 
+                <td>$1,750.00</td>
+            </tr>
+        </table>
+    </section>
+
+    <section id="order-form">
+        <h2>Order Form</h2>
+        <form>
+    
+        <fieldset>
+            <legend>Name of person ordering a melon:</legend>
+            <div>
+                <label for="username">Name:</label>
+                <input type="text" name="name" id="username">
+            </div>
+        </fieldset>
+
+
+        <fieldset>
+            <legend>Who are we sending this to?</legend>
+            <div>
+                <label for="recipient-name">Enter recipient's name</label>
+                <input type="text" name="recipient" id="recipient-name">
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Choose a Melon:</legend>
+            <div>
+                <select name="melon">
+                <option value="watermelon">Watermelon</option>
+                <option value="canteloupe">Canteloupe</option>
+                <option value="honeydew">Honeydew</option>
+                </select>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>When should we deliver?</legend>
+            <div>
+                <input type="radio" name="delivery-time" value="morning">
+                <label for="morning">Morning</label>
+                <input type="radio" name="delivery-time" value="evening">
+                <label for="Evening">Evening</label>
+                <input type="radio" name="delivery-time" value="anytime">
+                <label for="Anytime">Anytime</label>
+            </div>
+        </fieldset>
+
+
+
+        <fieldset>
+            <legend>What would you like to say?</legend>
+            <div>
+                <label for="user-message">Please enter your message:</label>
+                <input type="text" name="message" id="user-message">
+            </div>
+        </fieldset>
         <div>
-            <label for="username">Name:</label>
-            <input type="text" name="name" id="username">
+        Thank you for your order!
         </div>
-    </fieldset>
-
-
-    <fieldset>
-        <legend>Who are we sending this to?</legend>
         <div>
-            <label for="recipient-name">Enter recipient's name</label>
-            <input type="text" name="recipient" id="recipient-name">
+        Subscribe to our newsletter by clicking below:
         </div>
-    </fieldset>
-    <fieldset>
-        <legend>Choose a Melon:</legend>
         <div>
-            <select name="melon">
-            <option value="watermelon">Watermelon</option>
-            <option value="canteloupe">Canteloupe</option>
-            <option value="honeydew">Honeydew</option>
-            </select>
-        </div>
-    </fieldset>
-
-    <fieldset>
-        <legend>When should we deliver?</legend>
+            <input type="checkbox" name="subscribe" value="yes" id="subscribe">
+            <label for="subscribe">Subscribe</label>
+        </div
         <div>
-            <input type="radio" name="delivery-time" value="morning">
-            <label for="morning">Morning</label>
-            <input type="radio" name="delivery-time" value="evening">
-            <label for="Evening">Evening</label>
-            <input type="radio" name="delivery-time" value="anytime">
-            <label for="Anytime">Anytime</label>
+        <button type="submit">Submit</button>
         </div>
-    </fieldset>
-
-
-
-    <fieldset>
-        <legend>What would you like to say?</legend>
-        <div>
-            <label for="user-message">Please enter your message:</label>
-            <input type="text" name="message" id="user-message">
-        </div>
-    </fieldset>
-    <div>
-    Thank you for your order!
-    </div>
-    <div>
-    Subscribe to our newsletter by clicking below:
-    </div>
-    <div>
-        <input type="checkbox" name="subscribe" value="yes" id="subscribe">
-        <label for="subscribe">Subscribe</label>
-    </div
-    <div>
-    <button type="submit">Submit</button>
-    </div>
-</form>
+        </form>
+    </section>
 </body>
+</html>
